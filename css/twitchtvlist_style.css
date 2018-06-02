@@ -1,0 +1,192 @@
+/*common layout related*/
+html, body, #wrap {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body, .overlay {
+  background: #ffff99;
+}
+
+#wrap {
+  min-width: 18.75rem;
+}
+
+#header, #main, #selectbox, .title, .detail, .link, .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#header, #main {
+  width: 100%;
+  margin-bottom: 1.875rem;
+}
+
+#selectbox {
+  width: 90%;
+}
+
+.select, .streamer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0.3125rem;
+}
+
+
+/*header*/
+.btns  {
+  width: 5rem;
+  height: 1.5rem;
+  margin-left: 0.3125rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+  font-size:0.75rem;
+  color: white;
+  background: #b9a3e3;
+  border-bottom: 0.375rem #ffffff solid ;
+  cursor: pointer;
+}
+
+.btns:hover {
+  color: #b9a3e3;
+  background: #ffffff;
+  border: 0.1875rem #b9a3e3 solid;
+}
+
+
+/*main*/
+.streamer {
+  border-bottom: 0.125rem #6441a5 solid;
+}
+
+.title, .detail {
+  flex: 1;
+  height: 5rem;
+}
+
+.title {
+  margin-bottom: 0.625rem;
+}
+
+.detail {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.detail:hover .overlay {
+  opacity: 1;
+}
+
+img {
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+
+/*just font-related*/
+h1 {
+  font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+}
+
+h1, #copyright {
+  text-align: center;
+}
+
+h1, #copyright, #copyright a {
+  color: #6441a5;
+}
+
+.name, .update, .des, .status {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: black;
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.status {
+  font-size: 1.25rem;
+}
+
+.update, .des {
+  font-size: 0.75rem;
+}
+
+#copyright {
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*media query*/
+@media (min-width: 26.25rem){
+  .btns  {
+  width: 7.5rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  font-size:1.125rem;
+}
+  
+  #main{
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .streamer {
+    max-width: 9.375rem;
+    flex-direction: column;
+    margin: 0.625rem;
+    border-bottom: 0;
+  }
+  
+  .title, .detail {
+    width: 100%;
+  }
+  
+  .title {
+    margin-bottom: 0.9375rem;
+  }
+  
+  .detail {
+    height: 2.5rem;
+    margin-bottom: 0.1875rem;
+    border-bottom: 0.125rem #6441a5 solid;
+  }
+
+  img {
+    height: 3.75rem;
+}
+  
+} /*end media query*/
