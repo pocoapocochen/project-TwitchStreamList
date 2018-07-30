@@ -1,6 +1,6 @@
 # project-UseTheTwitchJSONAPI
 * Project topic from: freeCodeCamp - Legacy Front End Projects- Use the Twitch JSON API
-* [Live](https://pocoapocochen.github.io/project-UseTheTwitchtvJSONAPI/) version
+* [Live](https://pocoapocochen.github.io/project-UseTheTwitchJSONAPI/) version
 
 ## User Story
 * I can see whether Free Code Camp is currently streaming on Twitch.tv.
