@@ -1,4 +1,4 @@
-# project-UseTheTwitchtvJSONAPI
+# project-UseTheTwitchJSONAPI
 * Project topic from: freeCodeCamp - Legacy Front End Projects- Use the Twitch JSON API
 * [Live](https://pocoapocochen.github.io/project-UseTheTwitchtvJSONAPI/) version
 
