@@ -9,7 +9,7 @@
 
 ## Using
 * HTML
-* CSS
+* CSS (layout: flexbox)
 * jQuery
 * Font Awesome
 * Twitch.tv API (freeCodeCamp version, let learners get account information more easily without needing to sign up for an API key)
