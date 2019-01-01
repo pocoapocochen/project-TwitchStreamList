@@ -1,5 +1,5 @@
 # project-TwitchStreamList
-* Project topic from: freeCodeCamp - Legacy Front End Projects- Use the Twitch JSON API
+* Project topic from: freeCodeCamp - [Take Home Projects - Use the Twitch JSON API](https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/use-the-twitch-json-api/)
 * [Live](https://pocoapocochen.github.io/project-TwitchStreamList/) version
 
 ## User Story
