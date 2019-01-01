@@ -27,16 +27,16 @@ $(document).ready(function(){
 
       case "game":
         output = $("[media_type=starcraftii]").show();
-                 $("[media_type=creative], [media_type=music]").hide();
+                 $("[media_type=creative], [media_type=other]").hide();
         break;
 
       case "programming":
         output = $("[media_type=creative]").show();
-                 $("[media_type=starcraftii], [media_type=music]").hide();
+                 $("[media_type=starcraftii], [media_type=other]").hide();
         break;
                
-      case "music":
-       output = $("[media_type=music]").show();
+      case "other":
+       output = $("[media_type=other]").show();
                 $("[media_type=starcraftii], [media_type=creative]").hide();
       } //end switch
     return output;
@@ -50,8 +50,8 @@ $(document).ready(function(){
 // add new div with loop, and loop different array items into each API endpoint url 
 function list(){
   
-  var streamers = ["freecodecamp", "noobs2ninjas", "ESL_SC2", "OgamingSC2", "monstercat", "relaxbeats"];
-  
+  var streamers = ["freecodecamp", "noobs2ninjas", "ESL_SC2", "OgamingSC2", "storbeck", "habathcx"];
+
   for (var i = 0; i < streamers.length; i++){
    
    var $newdiv = newDiv();
@@ -102,7 +102,13 @@ function showStreamer($newdiv, channelurl, streamurl){
   
   //type
   var $streamer = $newdiv;
-  $streamer.attr("media_type", data1.game.toLowerCase().replace(/\s/g, '')); 
+    var text;
+    if (data1.game === null) {
+      text = "other";
+    } else {
+      text = data1.game.toLowerCase().replace(/\s/g, '');
+    } 
+  $streamer.attr("media_type", text); 
    
   //update
   var $update = $newdiv.find(".update");
